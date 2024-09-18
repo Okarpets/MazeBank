@@ -1,0 +1,40 @@
+{
+  "main": {
+    "header": "Добро пожаловать в приложение!",
+    "dark_theme": "Тёмная тема",
+    "light_theme": "Светлая тема"
+  },
+  "navigation_left": {
+    "cards_and_balances": "Картки та рахунки",
+    "deposit": "Депозит",
+    "transfer": "Переводы"
+  },
+  "cards": {
+    "premium_cards": "Премиальные карты",
+    "debit_cards": "Дебетовые карты",
+    "card_for_payments": "Карта для выплат",
+    "student_card": "Студенческая карта",
+    "social_card": "Социальная карта для выплат",
+    "pension_card": "Пенсионная карта",
+    "junior_card": "Карта Юниора"
+  },
+  "deposits": {
+    "programs": "Депозитные программы",
+    "personal": "Индивидуальные программы"
+  },
+  "transfers": {
+    "urgent" : "Срочные",
+    "by_phone": "По телефону"
+  },
+  "navigation_right": {
+    "profile": "Профиль"
+  }
+}
+
+
+
+
+
+
+
+

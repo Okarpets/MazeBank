@@ -1,0 +1,32 @@
+{
+  "main": {
+    "header": "Welcome to the app!",
+    "dark_theme": "Dark mode",
+    "light_theme": "Light mode"
+  },
+  "navigation_left": {
+    "cards_and_balances": "Cards and balances",
+    "deposit": "Deposit",
+    "transfer": "Transfers"
+  },
+  "cards": {
+    "premium_cards": "Premium cards",
+    "debit_cards": "Debit cards",
+    "card_for_payments": "Card for payments",
+    "student_card": "Student card",
+    "social_card": "Social card",
+    "pension_card": "Pension card",
+    "junior_card": "Junior card"
+  },
+  "deposits": {
+    "programs": "Deposit programs",
+    "personal": "Personal programs"
+  },
+  "transfers": {
+    "urgent" : "Urgent transfers",
+    "by_phone": "Transfers by phone"
+  },
+  "navigation_right": {
+    "profile": "profile"
+  }
+}

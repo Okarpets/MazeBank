@@ -1,0 +1,14 @@
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\bin\Debug\net6.0\API.DataLayer.deps.json
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\bin\Debug\net6.0\API.DataLayer.runtimeconfig.json
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\bin\Debug\net6.0\API.DataLayer.dll
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\bin\Debug\net6.0\API.DataLayer.pdb
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\obj\Debug\net6.0\API.DataLayer.csproj.AssemblyReference.cache
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\obj\Debug\net6.0\API.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\obj\Debug\net6.0\API.DataLayer.AssemblyInfoInputs.cache
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\obj\Debug\net6.0\API.DataLayer.AssemblyInfo.cs
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\obj\Debug\net6.0\API.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\obj\Debug\net6.0\API.DataLayer.dll
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\obj\Debug\net6.0\refint\API.DataLayer.dll
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\obj\Debug\net6.0\API.DataLayer.pdb
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\obj\Debug\net6.0\API.DataLayer.genruntimeconfig.cache
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.DataLayer\obj\Debug\net6.0\ref\API.DataLayer.dll

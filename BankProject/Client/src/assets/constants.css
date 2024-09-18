@@ -1,0 +1,22 @@
+:root {
+    /* LIGHT */
+    --light-theme-background: #e2ecf0;
+    --light-theme-font: rgb(15, 14, 34);
+
+    --light-theme-nav-background: #70c2e9;
+    --light-theme-nav-background-hover: #7ecef3;
+    --light-theme-nav-elem: #ffffff;
+
+    /* DARK */
+    --dark-theme-background: #142326;
+    --dark-theme-font: #ffffff;
+
+    --dark-theme-nav-background: rgb(32, 26, 59);
+    --dark-theme-nav-background-hover: rgb(17, 3, 3);
+    --dark-theme-nav-elem: #20383d;
+}
+
+
+
+  
+

@@ -1,0 +1,17 @@
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\bin\Debug\net6.0\API.BusinessLogicLayer.deps.json
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\bin\Debug\net6.0\API.BusinessLogicLayer.runtimeconfig.json
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\bin\Debug\net6.0\API.BusinessLogicLayer.dll
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\bin\Debug\net6.0\API.BusinessLogicLayer.pdb
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\bin\Debug\net6.0\API.DataLayer.dll
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\bin\Debug\net6.0\API.DataLayer.pdb
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\obj\Debug\net6.0\API.BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\obj\Debug\net6.0\API.BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\obj\Debug\net6.0\API.BusinessLogicLayer.AssemblyInfoInputs.cache
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\obj\Debug\net6.0\API.BusinessLogicLayer.AssemblyInfo.cs
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\obj\Debug\net6.0\API.BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\obj\Debug\net6.0\API.Busi.AD06C63F.Up2Date
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\obj\Debug\net6.0\API.BusinessLogicLayer.dll
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\obj\Debug\net6.0\refint\API.BusinessLogicLayer.dll
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\obj\Debug\net6.0\API.BusinessLogicLayer.pdb
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\obj\Debug\net6.0\API.BusinessLogicLayer.genruntimeconfig.cache
+C:\Users\Okarpets\Desktop\BankProject\BankProject.API\API.ApiLayer\API.BusinessLogicLayer\obj\Debug\net6.0\ref\API.BusinessLogicLayer.dll

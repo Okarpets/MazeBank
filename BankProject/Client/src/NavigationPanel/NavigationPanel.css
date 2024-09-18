@@ -1,0 +1,33 @@
+@import '/src/assets/constants.css';
+
+.global-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.global-navigation_left {
+    display: flex;
+}
+
+.global-navigation_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.theme-switcher {
+    left: 5%;
+}
+  
+body[data-theme='dark'] .global-navigation {
+    background-color: var(--dark-theme-nav-background);
+    color:aliceblue
+}
+
+body[data-theme='light'] .global-navigation {
+    background-color: var(--light-theme-nav-background);
+    color: var(--light-theme-font);
+}
+

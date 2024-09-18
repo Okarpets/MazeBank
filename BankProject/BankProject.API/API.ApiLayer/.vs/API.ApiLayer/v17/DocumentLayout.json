@@ -1,0 +1,575 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.apilayer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|solutionrelative:api.apilayer\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.businesslogiclayer\\models\\entitymodels\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|solutionrelative:api.businesslogiclayer\\models\\entitymodels\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.businesslogiclayer\\models\\services\\classes\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|solutionrelative:api.businesslogiclayer\\models\\services\\classes\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.businesslogiclayer\\models\\services\\classes\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|solutionrelative:api.businesslogiclayer\\models\\services\\classes\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\data\\repositories\\realization\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\data\\repositories\\realization\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\data\\repositories\\realization\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\data\\repositories\\realization\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\data\\repositories\\realization\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\data\\repositories\\realization\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\data\\repositories\\realization\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\data\\repositories\\realization\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\data\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\data\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.businesslogiclayer\\models\\entitymodels\\accountmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|solutionrelative:api.businesslogiclayer\\models\\entitymodels\\accountmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.businesslogiclayer\\models\\entitymodels\\transactionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|solutionrelative:api.businesslogiclayer\\models\\entitymodels\\transactionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.apilayer\\migrations\\20240917181530_secondmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|solutionrelative:api.apilayer\\migrations\\20240917181530_secondmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.apilayer\\migrations\\20240917172614_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|solutionrelative:api.apilayer\\migrations\\20240917172614_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\data\\entityconfigurations\\accountconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\data\\entityconfigurations\\accountconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\data\\entityconfigurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\data\\entityconfigurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\data\\entityconfigurations\\transactionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\data\\entityconfigurations\\transactionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\entities\\accountentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\entities\\accountentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\entities\\ientity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\entities\\ientity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\entities\\transactionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\entities\\transactionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\data\\datalayerdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\data\\datalayerdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.businesslogiclayer\\models\\entitymodels\\ientity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|solutionrelative:api.businesslogiclayer\\models\\entitymodels\\ientity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.apilayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|solutionrelative:api.apilayer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.businesslogiclayer\\mapping\\automapperbllprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|solutionrelative:api.businesslogiclayer\\mapping\\automapperbllprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\data\\infrastructure\\mazebankdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\data\\infrastructure\\mazebankdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.businesslogiclayer\\extensions\\blldi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|solutionrelative:api.businesslogiclayer\\extensions\\blldi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.businesslogiclayer\\models\\modelentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|solutionrelative:api.businesslogiclayer\\models\\modelentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.apilayer\\api.apilayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|solutionrelative:api.apilayer\\api.apilayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.apilayer\\migrations\\mazebankdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|solutionrelative:api.apilayer\\migrations\\mazebankdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.datalayer\\data\\infrastructure\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1153EA4D-6DB5-4081-B20C-FDBD6E99CCAF}|API.DataLayer\\API.DataLayer.csproj|solutionrelative:api.datalayer\\data\\infrastructure\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.apilayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A7F96723-AE3C-4C3C-8033-48012BBF23D0}|API.ApiLayer\\API.ApiLayer.csproj|solutionrelative:api.apilayer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|c:\\users\\okarpets\\desktop\\bankproject\\bankproject.api\\api.apilayer\\api.businesslogiclayer\\api.businesslogiclayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{296262E0-4057-4EAA-AEFD-5F79810B1578}|API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj|solutionrelative:api.businesslogiclayer\\api.businesslogiclayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\Services\\Classes\\TransactionService.cs",
+              "RelativeDocumentMoniker": "API.BusinessLogicLayer\\Models\\Services\\Classes\\TransactionService.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\Services\\Classes\\TransactionService.cs",
+              "RelativeToolTip": "API.BusinessLogicLayer\\Models\\Services\\Classes\\TransactionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T18:18:24.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "API.ApiLayer\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "API.ApiLayer\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:30:32.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\Services\\Classes\\AccountService.cs",
+              "RelativeDocumentMoniker": "API.BusinessLogicLayer\\Models\\Services\\Classes\\AccountService.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\Services\\Classes\\AccountService.cs",
+              "RelativeToolTip": "API.BusinessLogicLayer\\Models\\Services\\Classes\\AccountService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T18:18:03.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Repositories\\Realization\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Data\\Repositories\\Realization\\AccountRepository.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Repositories\\Realization\\AccountRepository.cs",
+              "RelativeToolTip": "API.DataLayer\\Data\\Repositories\\Realization\\AccountRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T18:17:54.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\EntityModels\\UserModel.cs",
+              "RelativeDocumentMoniker": "API.BusinessLogicLayer\\Models\\EntityModels\\UserModel.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\EntityModels\\UserModel.cs",
+              "RelativeToolTip": "API.BusinessLogicLayer\\Models\\EntityModels\\UserModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:08:42.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Repositories\\Realization\\UserRepository.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Data\\Repositories\\Realization\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Repositories\\Realization\\UserRepository.cs",
+              "RelativeToolTip": "API.DataLayer\\Data\\Repositories\\Realization\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T18:17:53.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TransactionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Repositories\\Realization\\TransactionRepository.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Data\\Repositories\\Realization\\TransactionRepository.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Repositories\\Realization\\TransactionRepository.cs",
+              "RelativeToolTip": "API.DataLayer\\Data\\Repositories\\Realization\\TransactionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T18:17:52.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Repositories\\Realization\\Repository.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Data\\Repositories\\Realization\\Repository.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Repositories\\Realization\\Repository.cs",
+              "RelativeToolTip": "API.DataLayer\\Data\\Repositories\\Realization\\Repository.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T18:17:46.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Data\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "API.DataLayer\\Data\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T18:17:36.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\EntityConfigurations\\AccountConfiguration.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Data\\EntityConfigurations\\AccountConfiguration.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\EntityConfigurations\\AccountConfiguration.cs",
+              "RelativeToolTip": "API.DataLayer\\Data\\EntityConfigurations\\AccountConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:08:48.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\EntityConfigurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Data\\EntityConfigurations\\UserConfiguration.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\EntityConfigurations\\UserConfiguration.cs",
+              "RelativeToolTip": "API.DataLayer\\Data\\EntityConfigurations\\UserConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:09:41.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20240917172614_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\Migrations\\20240917172614_InitialMigration.cs",
+              "RelativeDocumentMoniker": "API.ApiLayer\\Migrations\\20240917172614_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\Migrations\\20240917172614_InitialMigration.cs",
+              "RelativeToolTip": "API.ApiLayer\\Migrations\\20240917172614_InitialMigration.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:26:14.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20240917181530_SecondMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\Migrations\\20240917181530_SecondMigration.cs",
+              "RelativeDocumentMoniker": "API.ApiLayer\\Migrations\\20240917181530_SecondMigration.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\Migrations\\20240917181530_SecondMigration.cs",
+              "RelativeToolTip": "API.ApiLayer\\Migrations\\20240917181530_SecondMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T18:15:30.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TransactionModel.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\EntityModels\\TransactionModel.cs",
+              "RelativeDocumentMoniker": "API.BusinessLogicLayer\\Models\\EntityModels\\TransactionModel.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\EntityModels\\TransactionModel.cs",
+              "RelativeToolTip": "API.BusinessLogicLayer\\Models\\EntityModels\\TransactionModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:08:41.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountModel.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\EntityModels\\AccountModel.cs",
+              "RelativeDocumentMoniker": "API.BusinessLogicLayer\\Models\\EntityModels\\AccountModel.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\EntityModels\\AccountModel.cs",
+              "RelativeToolTip": "API.BusinessLogicLayer\\Models\\EntityModels\\AccountModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:08:38.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TransactionConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\EntityConfigurations\\TransactionConfiguration.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Data\\EntityConfigurations\\TransactionConfiguration.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\EntityConfigurations\\TransactionConfiguration.cs",
+              "RelativeToolTip": "API.DataLayer\\Data\\EntityConfigurations\\TransactionConfiguration.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAiwCYAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:09:39.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AccountEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Entities\\AccountEntity.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Entities\\AccountEntity.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Entities\\AccountEntity.cs",
+              "RelativeToolTip": "API.DataLayer\\Entities\\AccountEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:10:07.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Entities\\IEntity.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Entities\\IEntity.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Entities\\IEntity.cs",
+              "RelativeToolTip": "API.DataLayer\\Entities\\IEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:10:08.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TransactionEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Entities\\TransactionEntity.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Entities\\TransactionEntity.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Entities\\TransactionEntity.cs",
+              "RelativeToolTip": "API.DataLayer\\Entities\\TransactionEntity.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAjwAsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:10:09.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Entities\\UserEntity.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Entities\\UserEntity.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Entities\\UserEntity.cs",
+              "RelativeToolTip": "API.DataLayer\\Entities\\UserEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:10:10.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DataLayerDI.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\DataLayerDI.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Data\\DataLayerDI.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\DataLayerDI.cs",
+              "RelativeToolTip": "API.DataLayer\\Data\\DataLayerDI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:09:48.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\EntityModels\\IEntity.cs",
+              "RelativeDocumentMoniker": "API.BusinessLogicLayer\\Models\\EntityModels\\IEntity.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\EntityModels\\IEntity.cs",
+              "RelativeToolTip": "API.BusinessLogicLayer\\Models\\EntityModels\\IEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:08:40.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\Program.cs",
+              "RelativeDocumentMoniker": "API.ApiLayer\\Program.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\Program.cs",
+              "RelativeToolTip": "API.ApiLayer\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T16:59:28.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AutoMapperBLLProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Mapping\\AutoMapperBLLProfile.cs",
+              "RelativeDocumentMoniker": "API.BusinessLogicLayer\\Mapping\\AutoMapperBLLProfile.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Mapping\\AutoMapperBLLProfile.cs",
+              "RelativeToolTip": "API.BusinessLogicLayer\\Mapping\\AutoMapperBLLProfile.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:08:24.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "API.DataLayer\\Data\\DbInitializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:10:05.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MazeBankDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Infrastructure\\MazeBankDbContext.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Data\\Infrastructure\\MazeBankDbContext.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Infrastructure\\MazeBankDbContext.cs",
+              "RelativeToolTip": "API.DataLayer\\Data\\Infrastructure\\MazeBankDbContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:09:43.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BLLDI.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Extensions\\BLLDI.cs",
+              "RelativeDocumentMoniker": "API.BusinessLogicLayer\\Extensions\\BLLDI.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Extensions\\BLLDI.cs",
+              "RelativeToolTip": "API.BusinessLogicLayer\\Extensions\\BLLDI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:07:50.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ModelEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\ModelEntity.cs",
+              "RelativeDocumentMoniker": "API.BusinessLogicLayer\\Models\\ModelEntity.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\Models\\ModelEntity.cs",
+              "RelativeToolTip": "API.BusinessLogicLayer\\Models\\ModelEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:08:44.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MazeBankDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\Migrations\\MazeBankDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "API.ApiLayer\\Migrations\\MazeBankDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\Migrations\\MazeBankDbContextModelSnapshot.cs",
+              "RelativeToolTip": "API.ApiLayer\\Migrations\\MazeBankDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:27:31.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "API.ApiLayer.csproj",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\API.ApiLayer.csproj",
+              "RelativeDocumentMoniker": "API.ApiLayer\\API.ApiLayer.csproj",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\API.ApiLayer.csproj",
+              "RelativeToolTip": "API.ApiLayer\\API.ApiLayer.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-17T16:58:38.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Infrastructure\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "API.DataLayer\\Data\\Infrastructure\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.DataLayer\\Data\\Infrastructure\\UnitOfWork.cs",
+              "RelativeToolTip": "API.DataLayer\\Data\\Infrastructure\\UnitOfWork.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:09:46.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\appsettings.json",
+              "RelativeDocumentMoniker": "API.ApiLayer\\appsettings.json",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.ApiLayer\\appsettings.json",
+              "RelativeToolTip": "API.ApiLayer\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-17T17:03:42.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "API.BusinessLogicLayer.csproj",
+              "DocumentMoniker": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj",
+              "RelativeDocumentMoniker": "API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj",
+              "ToolTip": "C:\\Users\\Okarpets\\Desktop\\BankProject\\BankProject.API\\API.ApiLayer\\API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj",
+              "RelativeToolTip": "API.BusinessLogicLayer\\API.BusinessLogicLayer.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-17T17:03:06.515Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
