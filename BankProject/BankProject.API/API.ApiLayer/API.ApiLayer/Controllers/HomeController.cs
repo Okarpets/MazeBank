@@ -19,7 +19,7 @@ namespace API.ApiLayer.Controllers
         public async Task<ActionResult<UserModel>> GetUsers()
         {
             var users = await _userService.GetAllAsync();
-
+            #TODO add select logic
             return Ok(users);
         }
 
