@@ -1,0 +1,285 @@
+@import './public/constants/constants.css';
+
+.background-icons {
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 100px;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.main-content {
+    width: 80%;
+    max-width: 900px; 
+    min-width: 300px;
+    margin: 0 auto; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-form input {
+    border-radius: 2.5px;
+    width: 100%; 
+    max-width: 275px; 
+    height: 50px;
+    padding-left: 15px;
+    margin-bottom: 10px; 
+}
+
+.input-form button, .acts-selector button, .form-content button, .transfer-button button, .role-selector {
+    cursor: pointer;
+    color: white;
+    border-radius: 2.5px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 275px;
+    height: 50px;
+}
+
+.input-form button:hover, .acts-selector button:hover, .form-content button, .transfer-button button, .role-selector {
+    background: linear-gradient(var(--light-button-dark-part), var(--light-button-light-part));
+}
+
+.input-form button, .acts-selector button, .form-content button, .transfer-button button, .role-selector {
+    cursor: pointer;
+    color: white;
+    border-radius: 2.5px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 275px;
+    height: 50px;
+}
+
+.role-selector option {
+    cursor: pointer;
+}
+
+.input-form input::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        width: 90%; 
+    }
+
+    .header-container {
+        width: 90%;
+    }
+
+    .input-form input, .input-form button {
+        width: 100%; 
+    }
+    
+}
+
+.transaction-content {
+    display: flex;                    
+    flex-direction: column;           
+    justify-content: flex-end;        
+    align-items: center;              
+    height: 50px;
+    color: white;
+    position: relative;               
+}
+
+.transaction-username {
+    position: absolute;               
+    top: 5px;                            
+    left: 15px;                       
+}
+
+.acts-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bank-buttons {
+    display: grid;                   
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;                       
+}
+
+.bank-buttons input {
+    margin-top: 10px;
+}
+
+.main-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.main-content ul li {
+    margin-bottom: 3px;
+}
+
+.main-content ul li button {
+    cursor: pointer;
+}
+
+.transactions-form {
+    max-height: 425px; 
+    overflow-y: auto; 
+    padding: 10px;
+}
+  
+.transacts {
+    width: 100%;
+    height: auto;
+    max-height: 25px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px; 
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.operation-details {
+    white-space: nowrap;
+    overflow: hidden;   
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+    .transacts {
+        font-size: 0.8rem;
+    }
+}
+
+.transacts-account {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    left: auto;
+}
+  
+.transacts-balance {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    right: auto;
+}
+
+.transactions-form {
+    max-height: 425px; 
+    overflow-y: auto; 
+    padding: 10px;
+}
+  
+.transactions-form ul li button{
+    justify-content: center;
+}
+
+body[data-theme='dark'] .background-icons {
+    background-image: url('./public/maze-background-dark.jpg');
+}
+
+body[data-theme='light'] .background-icons {
+    background-image: url('./public/maze-background-light.jpg');
+}
+
+
+
+
+/* P1 */
+
+body[data-theme='dark'] .main-content {
+    background-color: var(--dark-main_content-background);
+}
+
+body[data-theme='light'] .main-content {
+    background-color: var(--light-main_content-background);
+}
+
+/* P2 */
+
+body[data-theme='dark'] .input-form button, .acts-selector button, .form-content button, .transfer-button button {
+    background: linear-gradient(var(--dark-button-light-part), var(--dark-button-dark-part));
+}
+
+body[data-theme='dark'] .role-selector {
+    background: linear-gradient(var(--dark-button-light-part), var(--dark-button-dark-part));
+}
+
+body[data-theme='light'] .input-form button, .acts-selector button, .form-content button, .transfer-button button, .role-selector {
+    background: linear-gradient(var(--light-button-light-part), var(--light-button-dark-part));
+}
+
+/* P3 */
+
+body[data-theme='dark'] .input-form button:hover, .acts-selector button:hover, .form-content button:hover, .transfer-button button:hover, .role-selector:hover {
+    background: linear-gradient(var(--dark-button-dark-part), var(--dark-button-light-part));
+}
+
+body[data-theme='dark'] .role-selector:hover {
+    background: linear-gradient(var(--dark-button-dark-part), var(--dark-button-light-part));
+}
+
+body[data-theme='light'] .input-form button:hover, .acts-selector button:hover, .form-content button:hover, .transfer-button button:hover, .role-selector:hover {
+    background: linear-gradient(var(--light-button-dark-part), var(--light-button-light-part));
+}
+
+/* P4 */
+
+body[data-theme='light'] .main-content ul li button:hover {
+    background: var(--light-menu-contents);
+} 
+
+body[data-theme='dark'] .main-content ul li button:hover {
+    background: var(--dark-menu-contents);
+} 
+
+/* P5 */
+
+body[data-theme='light'] .transacts {
+    background: var(--light-menu-contents);
+}
+
+body[data-theme='dark'] .transacts {
+    background: var(--dark-menu-contents);
+}
+
+/* P6 */
+
+body[data-theme='light'] .transaction-content {          
+    background: linear-gradient(var(--light-button-light-part), var(--light-button-dark-part));            
+}
+
+body[data-theme='dark'] .transaction-content {          
+    background: linear-gradient(var(--dark-button-light-part), var(--dark-button-dark-part));             
+}
+
+/* P7 */
+
+body[data-theme='light'] .transaction-content:hover {          
+    background: linear-gradient(var(--light-button-dark-part), var(--light-button-light-part));            
+}
+
+body[data-theme='dark'] .transaction-content:hover {          
+    background: linear-gradient(var(--dark-button-dark-part), var(--dark-button-light-part));             
+}
+
+/* P8 */
+
+body[data-theme='light'] .role-selector option {
+    background-color: var(--light-menu-contents);
+}
+
+body[data-theme='dark'] .role-selector option {
+    background-color: var(--dark-menu-contents);
+}

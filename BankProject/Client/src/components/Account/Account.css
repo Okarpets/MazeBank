@@ -1,0 +1,31 @@
+@import '../../../public/constants/constants.css';
+
+body[data-theme='light'] .buttons-form button {
+    cursor: pointer;
+    color: white;
+    border-radius: 2.5px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 275px;
+    height: 50px;
+    background: linear-gradient(var(--light-button-light-part), var(--light-button-dark-part));
+}
+
+body[data-theme='light'] .buttons-form button:hover {
+    background: linear-gradient(var(--light-button-dark-part), var(--light-button-light-part));
+}
+
+body[data-theme='dark'] .buttons-form button {
+    cursor: pointer;
+    color: white;
+    border-radius: 2.5px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 275px;
+    height: 50px;
+    background: linear-gradient(var(--dark-button-light-part), var(--dark-button-dark-part));
+}
+
+body[data-theme='dark'] .buttons-form button:hover {
+    background: linear-gradient(var(--dark-button-dark-part), var(--dark-button-light-part));
+}

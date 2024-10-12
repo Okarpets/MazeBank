@@ -1,0 +1,121 @@
+@import '../../../public/constants/constants.css';
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 15%;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-header-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.option-menu {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+.global-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image-container h1 {
+    text-align: start;
+    font-size: 2.1rem;
+}
+
+.image-container p {
+    text-align: start;
+    font-size: 1.2rem;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+.horizontal-line {
+    border: none;
+    width: 100%;
+    height: 4px;
+}
+
+body[data-theme='light'] .horizontal-line {
+    background-color: var(--light-horizontal-line);
+}
+
+body[data-theme='dark'] .horizontal-line {
+    background-color: var(--dark-horizontal-line);
+}
+
+
+.message-content {
+    margin-top: 50px;
+    margin-bottom: -90px;
+    font-size: 2.2em;
+    min-height: 100px;
+}
+
+.transaction-content {
+    margin-top: 30px;
+    min-height: 15px;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .image-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .image-container p {
+        font-size: 1rem;
+    }
+
+    .option-menu {
+        align-items: center;
+    }
+
+    .message-content {
+        font-size: 1.8em;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .transaction-content {
+        margin-top: 20px;
+        min-height: 90px;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,17 @@
+:root {
+    --light-horizontal-line: #cc252e;
+    --dark-horizontal-line: #2F3D40;
+    
+    --light-button-light-part: rgb(243, 38, 48);
+    --light-button-dark-part: rgb(172, 35, 52);
+    --light-main_content-background: rgb(241, 241, 241);
+    --light-menu-contents: rgb(220, 160, 160);
+    
+    --dark-button-light-part: #3D5A73;
+    --dark-button-dark-part: #2F3D40;
+    --dark-main_content-background: #55676b;
+    --dark-menu-contents: #3D5A73;
+}
+
+
+  

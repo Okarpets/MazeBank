@@ -1,0 +1,46 @@
+@import '../../../public/constants/constants.css';
+
+body[data-theme='light'] .error-message {
+    background-color: var(--light-horizontal-line);
+    color: white;
+    border-radius: 2px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+body[data-theme='dark'] .error-message {
+    background-color: var(--dark-horizontal-line);
+    color: white;
+    border-radius: 2px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+body[data-theme='light'] .info-message {
+    background-color: var(--light-menu-contents);
+    color: white;
+    border-radius: 2px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+body[data-theme='dark'] .info-message {
+    background-color: var(--dark-menu-contents);
+    color: white;
+    border-radius: 2px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: large;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+

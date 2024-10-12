@@ -1,0 +1,45 @@
+/* MAIN */
+
+.selector {
+    cursor: pointer;
+    color: white;
+    border-radius: 2.5px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 275px;
+    height: 50px;
+}
+
+.selector option {
+    cursor: pointer;
+}
+
+/* P1 */
+
+body[data-theme='dark'] .selector {
+    background: linear-gradient(var(--dark-button-light-part), var(--dark-button-dark-part));
+}
+
+body[data-theme='light'] .selector {
+    background: linear-gradient(var(--light-button-light-part), var(--light-button-dark-part));
+}
+
+/* P2 */
+
+body[data-theme='dark'] .selector:hover {
+    background: linear-gradient(var(--dark-button-dark-part), var(--dark-button-light-part));
+}
+
+body[data-theme='light'] .selector:hover {
+    background: linear-gradient(var(--light-button-dark-part), var(--light-button-light-part));
+}
+
+/* P3 */
+
+body[data-theme='light'] .selector option {
+    background-color: var(--light-menu-contents);
+}
+
+body[data-theme='dark'] .selector option {
+    background-color: var(--dark-menu-contents);
+}

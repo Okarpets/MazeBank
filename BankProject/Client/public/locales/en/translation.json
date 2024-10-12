@@ -1,0 +1,93 @@
+{
+  "themes": {
+    "dark_mode": "Dark mode",
+    "light_mode": "Light mode"
+  },
+  "auth": {
+    "login_success": "Login successful",
+    "login_failure": "Login error",
+    "registration_success": "Registration successful",
+    "registration_failure": "Registration error",
+    "enter_password": "Enter password",
+    "enter_username": "Enter username",
+    "login": "Login",
+    "register": "Register",
+    "no_account_prompt": "No account?",
+    "enter_email": "Enter email",
+    "already_have_account": "Already have an account?"
+  },
+  "transaction": {
+    "transfer": "Transfer",
+    "transfer_success": "Transfer successful",
+    "transaction_history": "Transactions",
+    "deposit": "Deposit",
+    "deposit_success": "Deposit successful",
+    "withdraw": "Withdraw",
+    "withdraw_success": "Withdrawal successful",
+    "delete_account": "Delete account",
+    "go_back": "Go back",
+    "transaction_overview": "Account transactions",
+    "deposit_prompt": "Select the amount you wish to deposit into this account",
+    "transfer_prompt": "Select the amount you wish to transfer",
+    "withdraw_prompt": "Select the amount you wish to withdraw from this account",
+    "operation_details": "Operation details",
+    "data_id": "ID: ",
+    "data_description": "Description: ",
+    "data_amount": "Amount: ",
+    "handle_operation": "Handle",
+    "download_as_pdf": "Download as PDF",
+    "card_not_exist": "Card doesn't exist",
+    "enter_card": "Enter card",
+    "enter_amount": "Enter amount",
+    "transaction_error": "Transaction error"
+  },
+  "headers": {
+    "account_balance": "Account balance: ",
+    "los_santos": "OF LOS SANTOS",
+    "welcome_back": "Welcome back,"
+  },
+  "admin": {
+    "admin_panel": "Admin panel",
+    "delete_user": "Delete user"
+  },
+  "accounts": {
+    "account_creation_success": "Account created successfully",
+    "account_creation_failure": "Failed to create account: ",
+    "main_account": "Account: ",
+    "exit_success": "Exit successful",
+    "user_accounts": "Here are your accounts: ",
+    "reset_password": "Reset password",
+    "change_username": "Change username",
+    "create_new_account": "Create new account",
+    "cancel": "Cancel",
+    "delete_account": "Delete account",
+    "exit_account": "Exit",
+    "new_username": "Enter new username",
+    "old_password": "Enter old password",
+    "new_password": "Enter new password",
+    "reset_success": "Reset successful",
+    "reset_failure": "Reset failed",
+    "title": "Account",
+    "delete_success": "Delete successful",
+    "delete_error": "Delete error"
+  },
+  "roles": {
+    "admin": "Admin",
+    "user": "User"
+  },
+  "errors": {
+    "login": "Invalid username or password.",
+    "user_exists": "User already exists.",
+    "user_not_found": "User not found.",
+    "unauthorized": "User not authorized.",
+    "invalid_password": "Invalid password.",
+    "invalid_account_id": "Invalid account ID.",
+    "account_not_found": "Account not found.",
+    "operation_denied": "Operation denied",
+    "to_account_not_found": "To account not found",
+    "from_account_not_found": "From account not found",
+    "amount_must_be_positive": "Amount must be greater than zero",
+    "not_enough_money": "Not enough funds in the source account",
+    "e_amount": "Invalid amount"
+  }
+}

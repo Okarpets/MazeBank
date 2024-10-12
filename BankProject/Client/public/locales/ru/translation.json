@@ -1,0 +1,93 @@
+{
+  "themes": {
+    "dark_mode": "Темный режим",
+    "light_mode": "Светлый режим"
+  },
+  "auth": {
+    "login_success": "Успешный вход",
+    "login_failure": "Ошибка входа",
+    "registration_success": "Регистрация успешна",
+    "registration_failure": "Ошибка регистрации",
+    "enter_password": "Введите пароль",
+    "enter_username": "Введите имя пользователя",
+    "login": "Войти",
+    "register": "Регистрация",
+    "no_account_prompt": "Нет аккаунта?",
+    "enter_email": "Введите электронную почту",
+    "already_have_account": "Уже есть аккаунт?"
+  },
+  "transaction": {
+    "transfer": "Перевод",
+    "transfer_success": "Перевод успешен",
+    "transaction_history": "История транзакций",
+    "deposit": "Внести",
+    "deposit_success": "Внесение успешно",
+    "withdraw": "Снять",
+    "withdraw_success": "Снятие успешно",
+    "delete_account": "Удалить аккаунт",
+    "go_back": "Назад",
+    "transaction_overview": "Транзакции по аккаунту",
+    "deposit_prompt": "Выберите сумму, которую хотите внести на этот аккаунт",
+    "transfer_prompt": "Выберите сумму, которую хотите перевести",
+    "withdraw_prompt": "Выберите сумму, которую хотите снять с этого аккаунта",
+    "operation_details": "Детали операции",
+    "data_id": "ID: ",
+    "data_description": "Описание: ",
+    "data_amount": "Сумма: ",
+    "handle_operation": "Отправить",
+    "download_as_pdf": "Скачать как PDF",
+    "card_not_exist": "Карты не существует",
+    "enter_card": "Введите номер карты",
+    "enter_amount": "Введите сумму",
+    "transaction_error": "Ошибка транзакции"
+  }, 
+  "headers": {
+    "account_balance": "Баланс аккаунта: ",
+    "los_santos": "ЛОС САНТОС",
+    "welcome_back": "Добро пожаловать назад,"
+  },
+  "admin": {
+    "admin_panel": "Панель администратора",
+    "delete_user": "Удалить пользователя"
+  },
+  "accounts": {
+    "account_creation_success": "Аккаунт успешно создан",
+    "account_creation_failure": "Не удалось создать аккаунт: ",
+    "main_account": "Аккаунт: ",
+    "exit_success": "Выход успешен",
+    "user_accounts": "Вот ваши аккаунты: ",
+    "reset_password": "Сбросить пароль",
+    "change_username": "Изменить имя пользователя",
+    "create_new_account": "Создать новый аккаунт",
+    "cancel": "Отмена",
+    "delete_account": "Удалить аккаунт",
+    "exit_account": "Выход",
+    "new_username": "Введите новое имя пользователя",
+    "old_password": "Введите старый пароль",
+    "new_password": "Введите новый пароль",
+    "reset_success": "Сброс успешен",
+    "reset_failure": "Сброс не удался",
+    "title": "Аккаунт",
+    "delete_success": "Удаление успешно",
+    "delete_error": "Ошибка удаления"
+  },
+  "roles": {
+    "admin": "Администратор",
+    "user": "Пользователь"
+  },
+  "errors": {
+    "login": "Неверное имя пользователя или пароль.",
+    "user_exists": "Пользователь уже существует.",
+    "user_not_found": "Пользователь не найден.",
+    "unauthorized": "Пользователь не авторизован.",
+    "invalid_password": "Неверный пароль.",
+    "invalid_account_id": "Неверный ID аккаунта.",
+    "account_not_found": "Аккаунт не найден.",
+    "operation_denied": "Операция запрещена",
+    "to_account_not_found": "Куда переводить не найдено",
+    "from_account_not_found": "Откуда переводить не найдено",
+    "amount_must_be_positive": "Сумма должна быть больше нуля",
+    "not_enough_money": "Недостаточно средств на исходном аккаунте",
+    "e_amount": "Неверная сумма" 
+  }
+}
