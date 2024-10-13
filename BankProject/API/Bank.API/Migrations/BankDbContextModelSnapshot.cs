@@ -42,7 +42,7 @@ namespace BANK.API.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Accounts");
+                    b.ToTable("Accounts", (string)null);
                 });
 
             modelBuilder.Entity("BANK.DataLayer.Entities.Transaction", b =>
@@ -82,7 +82,7 @@ namespace BANK.API.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Transactions");
+                    b.ToTable("Transactions", (string)null);
                 });
 
             modelBuilder.Entity("BANK.DataLayer.Entities.User", b =>
@@ -111,7 +111,7 @@ namespace BANK.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
 
                     b.HasData(
                         new

@@ -1,4 +1,5 @@
 ﻿using Bank.API.DTOs;
+using BANK.API.DTOs;
 using BANK.BusinessLayer.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -28,32 +29,68 @@ namespace Bank.API.Controllers
                 return NotFound(new { message = "errors.transaction_not_found" });
             }
 
+            var fromAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.FromAccountId.Value);
+            var toAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.ToAccountId.Value);
+
             var response = new
             {
-                id = transaction.Id,
-                description = transaction.Description,
-                amount = transaction.Amount
+                transaction.Id,
+                transaction.Amount,
+                TransactionDate = transaction.TransactionDate.ToString("dd/MM/yyyy - HH:mm:ss"),
+                FromAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.FromAccountId.Value),
+                ToAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.ToAccountId.Value),
+                transaction.TransactionType,
             };
 
             return Ok(response);
         }
 
-        [HttpGet("{accountId}")]
-        public async Task<IActionResult> GetTransactionsForAccount(Guid accountId)
+        [HttpPost("all")]
+        public async Task<IActionResult> GetTransactionsForAccount([FromBody] GetTransactionRequest request)
         {
-            var transactions = await _transactionService.GetTransactionsByAccountId(accountId);
+            var transactions = await _transactionService.GetTransactionsByAccountId(request.accountId);
             if (transactions == null || !transactions.Any())
             {
                 return NotFound(new { message = "errors.transactions_not_found" });
             }
 
-            var result = transactions.Select(t => new
+            switch (request.filter)
             {
-                t.Id,
-                t.Description
-            });
+                case 1:
+                    transactions = transactions.Where(t => t.TransactionType == 1).ToList();
+                    break;
+                case 2:
+                    transactions = transactions.Where(t => t.TransactionType == 2).ToList();
+                    break;
+                case 3:
+                    transactions = transactions.Where(t => t.TransactionType == 3).ToList();
+                    break;
+                case 0:
+                    break;
+                default:
+                    return BadRequest(new { message = "Invalid transaction type filter." });
+            }
 
-            return Ok(result);
+            var results = new List<object>();
+
+            foreach (var transaction in transactions)
+            {
+                var fromAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.FromAccountId.Value);
+                var toAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.ToAccountId.Value);
+
+                results.Add(new
+                {
+                    transaction.Id,
+                    transaction.Description,
+                    TransactionDate = transaction.TransactionDate.ToString("dd/MM/yyyy - HH:mm:ss"),
+                    FromAccountNumber = fromAccountNumber,
+                    ToAccountNumber = toAccountNumber,
+                    transaction.Amount,
+                    transaction.TransactionType
+                });
+            }
+
+            return Ok(results);
         }
 
         [HttpGet("balance/{accountId}")]

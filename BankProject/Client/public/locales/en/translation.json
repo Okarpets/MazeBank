@@ -89,5 +89,21 @@
     "amount_must_be_positive": "Amount must be greater than zero",
     "not_enough_money": "Not enough funds in the source account",
     "e_amount": "Invalid amount"
+  },
+  "filter": {
+    "deposit": "By deposit",
+    "withdraw": "By withdraw",
+    "transfer": "By transfer",
+    "all": "Without filter"
+  },
+  "transaction_data" : {
+    "1": "Deposit ",
+    "2": "Withdraw ",
+    "3": "Transfer",
+    "date": " Date: ",
+    "amount": "Amount:",
+    "type": "Transaction type: ",
+    "to": "To:",
+    "from": "From"
   }
 }

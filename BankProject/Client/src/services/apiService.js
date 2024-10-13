@@ -38,8 +38,8 @@ export const createAccount = async (userId) => {
   return api.get(`/account/create/${userId}`);
 };
 
-export const getTransactionsForAccount = async (accountId) => {
-  return api.get(`/transaction/${accountId}`);
+export const getTransactionsForAccount = async (accountId, filter) => {
+  return api.post(`/transaction/all`, {accountId, filter});
 };
 
 export const deleteAccountByNumber = async (accountNumber) => {
