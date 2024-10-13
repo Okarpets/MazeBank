@@ -21,4 +21,6 @@ The MazeBank is a robust ASP.NET Core project built on a three-layer architectur
 ![transaction_detail](https://github.com/Okarpets/MazeBank/blob/main/BankProject/assets/transaction_detail.png)
 
 * ***Controller examples***:
-![all_controllers](https://github.com/Okarpets/MazeBank/blob/main/BankProject/assets/all_controllers.png)
+<p align="center">
+  <img src="https://github.com/Okarpets/MazeBank/blob/main/BankProject/assets/all_controllers.png" alt="all_controller" />
+</p>
