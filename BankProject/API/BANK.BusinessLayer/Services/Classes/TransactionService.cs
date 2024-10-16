@@ -1,31 +1,32 @@
 ﻿using Bank.API.Models;
 using BANK.BusinessLayer.Services.Interfaces;
 using BANK.DataLayer.Data.Repositories.Interfaces;
-using BANK.DataLayer.Entities;
 
 namespace BANK.BusinessLayer.Services.Classes
 {
     public class TransactionService : ITransactionService
     {
         private readonly ITransactionPrivateService _transactionPrivateService;
+        private readonly ITransactionDetailsRepository _transactionDetailsRepository;
         private readonly ITransactionRepository _transactionRepository;
         private readonly IAccountRepository _accountRepository;
 
-        public TransactionService(ITransactionPrivateService transactionPrivateService, ITransactionRepository transactionRepository, IAccountRepository accountRepository)
+        public TransactionService(ITransactionPrivateService transactionPrivateService, ITransactionDetailsRepository transactionDetailsRepository, ITransactionRepository transactionRepository, IAccountRepository accountRepository)
         {
             _transactionPrivateService = transactionPrivateService;
+            _transactionDetailsRepository = transactionDetailsRepository;
             _transactionRepository = transactionRepository;
             _accountRepository = accountRepository;
         }
 
-        public async Task<IEnumerable<Transaction>> GetTransactionsByAccountId(Guid accountId)
+        public async Task<IEnumerable<TransactionDetails>> GetTransactionsByAccountId(Guid accountId)
         {
-            return await _transactionRepository.GetAllAsync(t => t.FromAccountId == accountId || t.ToAccountId == accountId);
+            return await _transactionDetailsRepository.GetAllAsync(t => t.FromAccountId == accountId || t.ToAccountId == accountId);
         }
 
-        public async Task<Transaction> GetTransactionDetails(Guid transactionId)
+        public async Task<TransactionDetails> GetTransactionDetails(Guid transactionId)
         {
-            return await _transactionRepository.Find(transactionId);
+            return await _transactionDetailsRepository.Find(transactionId);
         }
 
         public async Task<TransactionResult> DepositAsync(Guid accountId, string amount)
@@ -46,8 +47,9 @@ namespace BANK.BusinessLayer.Services.Classes
             account.Balance += amountValue;
             await _accountRepository.Update(account);
 
-            var transaction = await _transactionPrivateService.CreateDeposit(account, amountValue);
+            var (transaction, transactionDetails) = await _transactionPrivateService.CreateDeposit(account, amountValue);
             await _transactionRepository.Create(transaction);
+            await _transactionDetailsRepository.Create(transactionDetails);
 
             return new TransactionResult { Success = true };
         }
@@ -75,8 +77,9 @@ namespace BANK.BusinessLayer.Services.Classes
             account.Balance -= amountValue;
             await _accountRepository.Update(account);
 
-            var transaction = await _transactionPrivateService.CreateWithdraw(account, amountValue);
+            var (transaction, transactionDetails) = await _transactionPrivateService.CreateWithdraw(account, amountValue);
             await _transactionRepository.Create(transaction);
+            await _transactionDetailsRepository.Create(transactionDetails);
 
             return new TransactionResult { Success = true };
         }
@@ -107,20 +110,19 @@ namespace BANK.BusinessLayer.Services.Classes
             await _accountRepository.Update(fromAccount);
             await _accountRepository.Update(toAccount);
 
-            var transaction = await _transactionPrivateService.CreateTransfer(fromAccount, toAccount, amount);
-
+            var (transaction, transactionDetails) = await _transactionPrivateService.CreateTransfer(fromAccount, toAccount, amount);
             await _transactionRepository.Create(transaction);
+            await _transactionDetailsRepository.Create(transactionDetails);
 
             return new TransactionResult { Success = true };
         }
 
         public async Task DeleteTransactionsByAccountId(Guid accountId)
         {
-            var transactions = await GetTransactionsByAccountId(accountId);
-            if (transactions.Any())
-            {
-                await _transactionRepository.RemoveRange(transactions);
-            }
+            await _transactionDetailsRepository.RemoveRange(accountId);
+
+            await _transactionRepository.RemoveRange(accountId);
+
         }
 
         public async Task<TransactionResult> WithdrawAdminAsync(string accountNumber, string amount)
@@ -146,8 +148,11 @@ namespace BANK.BusinessLayer.Services.Classes
             account.Balance -= amountValue;
             await _accountRepository.Update(account);
 
-            var transaction = await _transactionPrivateService.CreateWithdraw(account, amountValue);
+
+            var (transaction, transactionDetails) = await _transactionPrivateService.CreateWithdraw(account, amountValue);
+
             await _transactionRepository.Create(transaction);
+            await _transactionDetailsRepository.Create(transactionDetails);
 
             return new TransactionResult { Success = true };
         }
@@ -170,8 +175,10 @@ namespace BANK.BusinessLayer.Services.Classes
             account.Balance += amountValue;
             await _accountRepository.Update(account);
 
-            var transaction = await _transactionPrivateService.CreateDeposit(account, amountValue);
+            var (transaction, transactionDetails) = await _transactionPrivateService.CreateDeposit(account, amountValue);
+
             await _transactionRepository.Create(transaction);
+            await _transactionDetailsRepository.Create(transactionDetails);
 
             return new TransactionResult { Success = true };
         }

@@ -1,33 +1,43 @@
 ﻿using Bank.API.DTOs;
-using BANK.API.Models;
 using BANK.BusinessLayer.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
 
 namespace Bank.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ShopUsageController : ControllerBase
+
+    public class ApiKeyController : ControllerBase
     {
         private readonly ITransactionService _transactionService;
-        private readonly ShopSettings _shopSettings;
 
-        public ShopUsageController(ITransactionService transactionService, IOptions<ShopSettings> shopSettings)
+        private readonly IApiService _apiService;
+
+        public ApiKeyController(ITransactionService transactionService, IApiService apiService)
         {
             _transactionService = transactionService;
-            _shopSettings = shopSettings.Value;
+            _apiService = apiService;
         }
 
-        [HttpPost("transfer")]
-        public async Task<IActionResult> DoTransfer([FromBody] TransferRequest request)
+        [HttpGet("create")]
+        public async Task<IActionResult> CreateKey()
         {
-            var shopIdClaim = User.FindFirst("shopId")?.Value;
-            var urlClaim = User.FindFirst("url")?.Value;
+            var apiKey = await _apiService.GenerateApiKey();
 
-            if (urlClaim != _shopSettings.ShopUrl && shopIdClaim != _shopSettings.ShopId)
+            return Ok(new { Key = apiKey });
+        }
+
+        [HttpPost("use")]
+        public async Task<IActionResult> UseKey([FromBody] TransferRequest request)
+        {
+
+            var apiKey = Request.Headers.ContainsKey("ApiKey") ? Request.Headers["ApiKey"].ToString() : null;
+
+            var apiExists = await _apiService.ExistsApiKey(apiKey);
+
+            if (!apiExists)
             {
-                return BadRequest(new { status = false });
+                return Unauthorized(new { message = "Api key doesn't exists" });
             }
 
             if (request.ToAccount == request.FromAccount)
@@ -46,6 +56,3 @@ namespace Bank.API.Controllers
         }
     }
 }
-
-
-

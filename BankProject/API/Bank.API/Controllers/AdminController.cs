@@ -9,6 +9,7 @@ namespace Bank.API.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
+
     public class AdminController : ControllerBase
     {
         private readonly ITransactionService _transactionService;

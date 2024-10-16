@@ -27,6 +27,8 @@ public static class DataLayerDependencyInjection
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IAccountRepository, AccountRepository>();
         services.AddScoped<ITransactionRepository, TransactionRepository>();
+        services.AddScoped<IApiRepository, ApiRepository>();
+        services.AddScoped<ITransactionDetailsRepository, TransactionDetailsRepository>();
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
     }

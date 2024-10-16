@@ -64,7 +64,7 @@ namespace BANK.BusinessLayer.Services.Classes
             return true;
         }
 
-        public async Task<bool> DeleteAccountBuNumber(string accountNumber)
+        public async Task<bool> DeleteAccountByNumber(string accountNumber)
         {
             var account = await _accountRepository.FindByNumber(accountNumber);
             if (account == null)
@@ -72,6 +72,7 @@ namespace BANK.BusinessLayer.Services.Classes
                 return false;
             }
 
+            await _transactionRepository.RemoveRange(account.Id);
             await _accountRepository.DeleteByNumber(accountNumber);
             await _accountRepository.SaveChangesAsync();
 

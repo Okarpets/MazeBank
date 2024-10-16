@@ -8,8 +8,7 @@
             {
                 options.AddPolicy("AllowReactApp", policy =>
                 {
-                    policy.WithOrigins("https://mazebankclient-cpcadyduaafrghf0.westeurope-01.azurewebsites.net",
-                            "https://idontknowtheirshopurl.azurewebsites.net")
+                    policy.WithOrigins("https://mazebankclient-cpcadyduaafrghf0.westeurope-01.azurewebsites.net")
                           .AllowAnyHeader()
                           .AllowAnyMethod()
                           .AllowCredentials();

@@ -13,5 +13,6 @@ public static class BusinessLayerDependencyInjection
         services.AddScoped<IAccountService, AccountService>();
         services.AddScoped<ITransactionService, TransactionService>();
         services.AddScoped<ITransactionPrivateService, TransactionPrivateService>();
+        services.AddScoped<IApiService, ApiService>();
     }
 }

@@ -7,52 +7,73 @@ namespace BANK.BusinessLayer.Services.Classes
     {
         public TransactionPrivateService() { }
 
-        public async Task<Transaction> CreateTransfer(Account fromAccount, Account toAccount, decimal amount)
+        public async Task<(Transaction, TransactionDetails)> CreateTransfer(Account fromAccount, Account toAccount, decimal amount)
         {
             var transaction = new Transaction
             {
                 Id = Guid.NewGuid(),
+                AccountId = fromAccount.Id
+            };
+
+            var transactionDetails = new TransactionDetails
+            {
+                Id = transaction.Id,
                 FromAccountId = fromAccount.Id,
                 ToAccountId = toAccount.Id,
                 Amount = amount,
                 TransactionType = 3,
-                Description = $"| Transfer from {fromAccount.AccountNumber} to {toAccount.AccountNumber} | @ | Date: {DateTime.UtcNow} |",
-                TransactionDate = DateTime.Now
+                TransactionDate = DateTime.UtcNow.ToLocalTime(),
+                FromAccountNumber = fromAccount.AccountNumber,
+                ToAccountNumber = toAccount.AccountNumber,
             };
 
-            return transaction;
+            return (transaction, transactionDetails);
         }
 
-        public async Task<Transaction> CreateWithdraw(Account account, decimal amount)
+        public async Task<(Transaction, TransactionDetails)> CreateWithdraw(Account account, decimal amount)
         {
             var transaction = new Transaction
             {
                 Id = Guid.NewGuid(),
+                AccountId = account.Id
+            };
+
+            var transactionDetails = new TransactionDetails
+            {
+                Id = transaction.Id,
+                FromAccountId = account.Id,
+                ToAccountId = account.Id,
                 Amount = amount,
-                TransactionDate = DateTime.Now,
                 TransactionType = 2,
-                Description = $"| Withdraw transaction |@| Date: {DateTime.UtcNow} |",
-                FromAccountId = account.Id,
-                ToAccountId = account.Id
+                FromAccountNumber = account.AccountNumber,
+                ToAccountNumber = account.AccountNumber,
+                TransactionDate = DateTime.UtcNow.ToLocalTime()
             };
 
-            return transaction;
+            return (transaction, transactionDetails);
         }
 
-        public async Task<Transaction> CreateDeposit(Account account, decimal amount)
+        public async Task<(Transaction, TransactionDetails)> CreateDeposit(Account account, decimal amount)
         {
             var transaction = new Transaction
             {
                 Id = Guid.NewGuid(),
-                Amount = amount,
-                TransactionDate = DateTime.Now,
-                TransactionType = 1,
-                Description = $"| Deposit transaction |@| Date: {DateTime.UtcNow} |",
-                FromAccountId = account.Id,
-                ToAccountId = account.Id
+                AccountId = account.Id
             };
 
-            return transaction;
+            var transactionDetails = new TransactionDetails
+            {
+                Id = transaction.Id,
+                FromAccountId = account.Id,
+                ToAccountId = account.Id,
+                Amount = amount,
+                TransactionType = 1,
+                FromAccountNumber = account.AccountNumber,
+                ToAccountNumber = account.AccountNumber,
+                TransactionDate = DateTime.UtcNow.ToLocalTime()
+            };
+
+            return (transaction, transactionDetails);
         }
     }
 }

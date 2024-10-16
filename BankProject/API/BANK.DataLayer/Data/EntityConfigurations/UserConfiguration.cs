@@ -10,8 +10,8 @@ namespace Bank.API.Data.EntitiesConfigurations
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.Property(u => u.Role)
-                .IsRequired()
-                .HasDefaultValue("User");
+                 .IsRequired()
+                 .HasDefaultValue("User");
 
             builder.HasMany(u => u.Accounts)
                 .WithOne(a => a.User)

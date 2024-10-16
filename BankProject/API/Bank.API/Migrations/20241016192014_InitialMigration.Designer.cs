@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BANK.API.Migrations
 {
     [DbContext(typeof(BankDbContext))]
-    [Migration("20241001201428_InitialMigration")]
+    [Migration("20241016192014_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,40 +47,35 @@ namespace BANK.API.Migrations
                     b.ToTable("Accounts");
                 });
 
+            modelBuilder.Entity("BANK.DataLayer.Entities.ApiKey", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("key")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ApiKeys");
+                });
+
             modelBuilder.Entity("BANK.DataLayer.Entities.Transaction", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<decimal>("Amount")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("FromAccountId")
-                        .IsRequired()
+                    b.Property<Guid>("AccountId")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("ToAccountId")
-                        .IsRequired()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("TransactionDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("TransactionType")
-                        .HasColumnType("int");
 
                     b.Property<Guid?>("UserId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("FromAccountId");
-
-                    b.HasIndex("ToAccountId");
 
                     b.HasIndex("UserId");
 
@@ -118,12 +113,49 @@ namespace BANK.API.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("3a12f459-4d9c-4092-91c8-2d5a577ce41a"),
+                            Id = new Guid("5029ddc1-fc33-4ab4-8d3a-c1f4e323f98e"),
                             Email = "Admin@gmail.com",
-                            PasswordHash = "pDW4GoLXO+LK79NE3RhYqA==:+cVkZdhmjpaYs9m4sWQ8cP0kJJAwPVeYnVUcIEyqKjg=",
+                            PasswordHash = "eDMTTEDp+lxDWeZyajsGGw==:0cwRQ6vr5lcP/1BKpZqDWa6F/mZ+N92YYFJpPx73bCY=",
                             Role = "Admin",
                             Username = "admin"
                         });
+                });
+
+            modelBuilder.Entity("TransactionDetails", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<Guid>("FromAccountId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("FromAccountNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("ToAccountId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ToAccountNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("TransactionDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("TransactionType")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FromAccountId");
+
+                    b.HasIndex("ToAccountId");
+
+                    b.ToTable("TransactionDetails");
                 });
 
             modelBuilder.Entity("BANK.DataLayer.Entities.Account", b =>
@@ -139,25 +171,36 @@ namespace BANK.API.Migrations
 
             modelBuilder.Entity("BANK.DataLayer.Entities.Transaction", b =>
                 {
+                    b.HasOne("BANK.DataLayer.Entities.User", null)
+                        .WithMany("Transactions")
+                        .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("TransactionDetails", b =>
+                {
                     b.HasOne("BANK.DataLayer.Entities.Account", "FromAccount")
                         .WithMany("FromTransactions")
                         .HasForeignKey("FromAccountId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("BANK.DataLayer.Entities.Transaction", "Transaction")
+                        .WithOne("TransactionDetails")
+                        .HasForeignKey("TransactionDetails", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("BANK.DataLayer.Entities.Account", "ToAccount")
                         .WithMany("ToTransactions")
                         .HasForeignKey("ToAccountId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("BANK.DataLayer.Entities.User", null)
-                        .WithMany("Transactions")
-                        .HasForeignKey("UserId");
 
                     b.Navigation("FromAccount");
 
                     b.Navigation("ToAccount");
+
+                    b.Navigation("Transaction");
                 });
 
             modelBuilder.Entity("BANK.DataLayer.Entities.Account", b =>
@@ -165,6 +208,12 @@ namespace BANK.API.Migrations
                     b.Navigation("FromTransactions");
 
                     b.Navigation("ToTransactions");
+                });
+
+            modelBuilder.Entity("BANK.DataLayer.Entities.Transaction", b =>
+                {
+                    b.Navigation("TransactionDetails")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("BANK.DataLayer.Entities.User", b =>

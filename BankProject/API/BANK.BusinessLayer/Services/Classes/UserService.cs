@@ -134,7 +134,14 @@ namespace BANK.BusinessLayer.Services.Classes
             {
                 return false;
             }
-            await _transactionRepository.RemoveRange(user.Transactions);
+
+            var accounts = await _accountService.GetAllUserAccountsById(userId);
+
+            foreach (var account in accounts)
+            {
+                await _accountService.DeleteAccountByNumber(account.AccountNumber);
+            }
+
             await _userRepository.Delete(userId);
 
             await _userRepository.SaveChangesAsync();
@@ -180,6 +187,19 @@ namespace BANK.BusinessLayer.Services.Classes
 
         public async Task<bool> DeleteUserByUsernameAsync(string username)
         {
+            var user = await _userRepository.FindByUsername(username);
+            if (user == null)
+            {
+                return false;
+            }
+
+            var accounts = await _accountService.GetAllUserAccountsById(user.Id);
+
+            foreach (var account in accounts)
+            {
+                await _accountService.DeleteAccountByNumber(account.AccountNumber);
+            }
+
             return await _userRepository.DeleteByUsername(username);
         }
     }

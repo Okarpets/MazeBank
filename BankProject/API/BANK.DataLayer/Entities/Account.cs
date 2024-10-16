@@ -10,7 +10,7 @@ public class Account : IEntity
 
     public virtual User User { get; set; }
 
-    public virtual ICollection<Transaction> FromTransactions { get; set; }
+    public virtual ICollection<TransactionDetails> FromTransactions { get; set; }
 
-    public virtual ICollection<Transaction> ToTransactions { get; set; }
+    public virtual ICollection<TransactionDetails> ToTransactions { get; set; }
 }

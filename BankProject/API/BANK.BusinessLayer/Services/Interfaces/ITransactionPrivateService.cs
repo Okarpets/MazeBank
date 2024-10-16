@@ -4,9 +4,9 @@ namespace BANK.BusinessLayer.Services.Interfaces;
 
 public interface ITransactionPrivateService
 {
-    Task<Transaction> CreateWithdraw(Account account, decimal amount);
+    Task<(Transaction, TransactionDetails)> CreateWithdraw(Account account, decimal amount);
 
-    Task<Transaction> CreateDeposit(Account account, decimal amount);
+    Task<(Transaction, TransactionDetails)> CreateDeposit(Account account, decimal amount);
 
-    Task<Transaction> CreateTransfer(Account fromAccount, Account toAccount, decimal amount);
+    Task<(Transaction, TransactionDetails)> CreateTransfer(Account fromAccount, Account toAccount, decimal amount);
 }

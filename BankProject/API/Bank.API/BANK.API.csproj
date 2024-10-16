@@ -36,6 +36,10 @@
 	 <ProjectReference Include="..\BANK.DataLayer\BANK.DataLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Logs\" />
+  </ItemGroup>
+
 	<PropertyGroup>
 		<AllowUntrustedCertificate>true</AllowUntrustedCertificate>
 	</PropertyGroup>

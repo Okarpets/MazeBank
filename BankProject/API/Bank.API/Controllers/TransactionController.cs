@@ -9,6 +9,7 @@ namespace Bank.API.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
+
     public class TransactionController : ControllerBase
     {
         private readonly ITransactionService _transactionService;
@@ -29,16 +30,16 @@ namespace Bank.API.Controllers
                 return NotFound(new { message = "errors.transaction_not_found" });
             }
 
-            var fromAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.FromAccountId.Value);
-            var toAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.ToAccountId.Value);
+            var fromAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.FromAccountId);
+            var toAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.ToAccountId);
 
             var response = new
             {
                 transaction.Id,
                 transaction.Amount,
                 TransactionDate = transaction.TransactionDate.ToString("dd/MM/yyyy - HH:mm:ss"),
-                FromAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.FromAccountId.Value),
-                ToAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.ToAccountId.Value),
+                FromAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.FromAccountId),
+                ToAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.ToAccountId),
                 transaction.TransactionType,
             };
 
@@ -75,13 +76,12 @@ namespace Bank.API.Controllers
 
             foreach (var transaction in transactions)
             {
-                var fromAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.FromAccountId.Value);
-                var toAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.ToAccountId.Value);
+                var fromAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.FromAccountId);
+                var toAccountNumber = await _accountService.GetAccountNumberByIdAsync(transaction.ToAccountId);
 
                 results.Add(new
                 {
                     transaction.Id,
-                    transaction.Description,
                     TransactionDate = transaction.TransactionDate.ToString("dd/MM/yyyy - HH:mm:ss"),
                     FromAccountNumber = fromAccountNumber,
                     ToAccountNumber = toAccountNumber,

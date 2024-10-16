@@ -2,7 +2,7 @@
 
 namespace BANK.DataLayer.Data.Repositories.Interfaces;
 
-public interface ITransactionRepository : IRepository<Transaction>
+public interface ITransactionDetailsRepository : IRepository<TransactionDetails>
 {
     Task RemoveRange(Guid accountId);
 }

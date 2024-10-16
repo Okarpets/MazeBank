@@ -8,18 +8,20 @@ namespace Bank.API.Data.EntitiesConfigurations
     {
         public void Configure(EntityTypeBuilder<Account> builder)
         {
+            builder.HasKey(a => a.Id);
+
             builder.Property(a => a.Balance)
                 .HasColumnType("decimal(18, 2)");
 
             builder.HasMany(a => a.FromTransactions)
-                .WithOne(t => t.FromAccount)
-                .HasForeignKey(t => t.FromAccountId)
-                .OnDelete(DeleteBehavior.Cascade);
+                   .WithOne(td => td.FromAccount)
+                   .HasForeignKey(td => td.FromAccountId)
+                   .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasMany(a => a.ToTransactions)
-                .WithOne(t => t.ToAccount)
-                .HasForeignKey(t => t.ToAccountId)
-                .OnDelete(DeleteBehavior.Restrict);
+                   .WithOne(td => td.ToAccount)
+                   .HasForeignKey(td => td.ToAccountId)
+                   .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

@@ -8,8 +8,9 @@ namespace Bank.API.Data.EntitiesConfigurations
     {
         public void Configure(EntityTypeBuilder<Transaction> builder)
         {
-            builder.Property(t => t.Amount)
-                .HasColumnType("decimal(18, 2)");
+            builder.HasOne(t => t.TransactionDetails)
+                   .WithOne(td => td.Transaction)
+                   .HasForeignKey<TransactionDetails>(td => td.Id);
         }
     }
 }

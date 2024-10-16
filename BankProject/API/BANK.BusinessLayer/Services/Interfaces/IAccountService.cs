@@ -8,7 +8,7 @@ public interface IAccountService
 
     Task<Account> GetUserAccountById(Guid accountId);
 
-    Task<bool> DeleteAccountBuNumber(string accountNumber);
+    Task<bool> DeleteAccountByNumber(string accountNumber);
 
     Task<string> GetAccountNumberByIdAsync(Guid accountId);
 
