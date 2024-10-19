@@ -2,6 +2,7 @@
 using BANK.BusinessLayer.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace Bank.API.Controllers
 {
     [Route("api/[controller]")]
@@ -13,10 +14,13 @@ namespace Bank.API.Controllers
 
         private readonly IApiService _apiService;
 
-        public ApiKeyController(ITransactionService transactionService, IApiService apiService)
+        private readonly IBusService _busService;
+
+        public ApiKeyController(ITransactionService transactionService, IApiService apiService, IBusService busService)
         {
             _transactionService = transactionService;
             _apiService = apiService;
+            _busService = busService;
         }
 
         [HttpGet("create")]
@@ -28,20 +32,24 @@ namespace Bank.API.Controllers
         }
 
         [HttpPost("use")]
-        public async Task<IActionResult> UseKey([FromBody] TransferRequest request)
+        public async Task<IActionResult> UseKey([FromBody] ShopRequest request)
         {
-
+            string status = "success";
             var apiKey = Request.Headers.ContainsKey("ApiKey") ? Request.Headers["ApiKey"].ToString() : null;
 
             var apiExists = await _apiService.ExistsApiKey(apiKey);
 
             if (!apiExists)
             {
+                status = "Api key doesn't exists";
+                await SendMessageAsync(request, status);
                 return Unauthorized(new { message = "Api key doesn't exists" });
             }
 
             if (request.ToAccount == request.FromAccount)
             {
+                status = "Operation Denied";
+                await SendMessageAsync(request, status);
                 return BadRequest(new { message = "errors.operation_denied" });
             }
 
@@ -49,10 +57,26 @@ namespace Bank.API.Controllers
 
             if (!result.Success)
             {
+                status = $"{result.Message}";
+                await SendMessageAsync(request, status);
                 return BadRequest(new { message = result.Message });
+
             }
 
+            await SendMessageAsync(request, status);
             return Ok(new { status = true, message = "transaction.transfer_success" });
+        }
+
+        private async Task SendMessageAsync(ShopRequest request, string status)
+        {
+            await _busService.messageAsync(
+                request.FromAccount,
+                request.ToAccount,
+                request.Amount,
+                request.Email,
+                request.OrderId,
+                status
+            );
         }
     }
 }

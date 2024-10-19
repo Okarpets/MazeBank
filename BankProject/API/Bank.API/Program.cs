@@ -1,5 +1,6 @@
 using Bank.API.Extensions;
 using BANK.API.Extensions.Middleware;
+using BANK.API.Models;
 using BANK.BusinessLayer.Extensions;
 using BANK.BusinessLayer.Mapping;
 using BANK.DataLayer.Data;
@@ -14,6 +15,7 @@ var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurre
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 
+builder.Services.Configure<ServiceBusSettings>(builder.Configuration.GetSection("ServiceBus"));
 builder.Services.AddJwtAuthentication(configuration["Jwt:Key"]);
 builder.Services.AddReactCors();
 
@@ -26,7 +28,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "MazeAPI", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
 });
 
 builder.Services.AddAuthorization();
@@ -66,9 +68,10 @@ app.UseCors("AllowReactApp");
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "MazeAPI V1");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
     c.RoutePrefix = string.Empty;
 });
+
 app.UseStaticFiles();
 
 app.UseEndpoints(endpoints =>
