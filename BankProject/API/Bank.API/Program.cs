@@ -15,7 +15,6 @@ var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurre
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 
-builder.Services.Configure<ServiceBusSettings>(builder.Configuration.GetSection("ServiceBus"));
 builder.Services.AddJwtAuthentication(configuration["Jwt:Key"]);
 builder.Services.AddReactCors();
 

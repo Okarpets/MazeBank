@@ -1,18 +1,31 @@
 ﻿using Azure.Messaging.ServiceBus;
-using BANK.API.Models;
 using BANK.BusinessLayer.Services.Interfaces;
-using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Configuration;
 using System.Text.Json;
 
 namespace BANK.BusinessLayer.Services.Classes;
 
-public class BusSerivce : IBusService
+public class BusService : IBusService
 {
-    private readonly API.Models.ServiceBusSettings _settings;
+    private readonly string _connectionString;
 
-    public BusSerivce(IOptions<ServiceBusSettings> settings)
+    private readonly string _serviceBusSender;
+
+    public BusService(IConfiguration configuration)
     {
-        _settings = settings.Value;
+        _connectionString = configuration.GetValue<string>("ServiceBus:ServiceBusConnection");
+
+        _serviceBusSender = configuration.GetValue<string>("ServiceBus:ServiceBusSender");
+
+        if (string.IsNullOrEmpty(_connectionString))
+        {
+            throw new ArgumentNullException(nameof(_connectionString), "Service Bus connection string is missing.");
+        }
+
+        if (string.IsNullOrEmpty(_serviceBusSender))
+        {
+            throw new ArgumentNullException(nameof(_connectionString), "Service Bus sender string is missing.");
+        }
     }
 
     public async Task messageAsync(string FromAccount, string ToAccount, string Amount, string Email, Guid OrderId, string Status)
@@ -29,8 +42,8 @@ public class BusSerivce : IBusService
 
         var data = JsonSerializer.Serialize(message);
 
-        var busClient = new ServiceBusClient(_settings.ServiceBusConnection);
-        var sender = busClient.CreateSender(_settings.ServiceBusSender);
+        var busClient = new ServiceBusClient(_connectionString);
+        var sender = busClient.CreateSender(_serviceBusSender);
         var messageBus = new ServiceBusMessage(data);
 
         await sender.SendMessageAsync(messageBus);
